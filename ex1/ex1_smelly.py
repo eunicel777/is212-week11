@@ -19,11 +19,7 @@ class OrderProcessor:
 
         # Step 4: Update inventory
         for item in order["items"]:
-            item_id = item["id"]
-            quantity = item["quantity"]
-            # Code to update inventory for each item
-            # (for simplicity, let's assume a simple print statement here)
-            print(f"Updating inventory for item {item_id}, reducing stock by {quantity}.")
+            print(f"Updating inventory for item {item["id"]}, reducing stock by {item["quantity"]}.")
 
         # Step 5: Generate receipt
         receipt = f"Customer ID: {order['customer_id']}\n"
